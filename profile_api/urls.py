@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.http import JsonResponse
-from core import views
+# from core import views
 
 
 def home(request):
@@ -26,6 +26,6 @@ def home(request):
 urlpatterns = [
     path('', home),  # add this line
     path('admin/', admin.site.urls),
-    path('me', views.me, name='me'),
+    # path('me', views.me, name='me'),
     path('', include('core.urls')),  # keep this line
 ]
