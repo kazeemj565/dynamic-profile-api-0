@@ -1,0 +1,24 @@
+# Django
+echo "
+*.pyc
+__pycache__/
+db.sqlite3
+/staticfiles/
+media/
+" > .gitignore
+
+
+# Environment
+.env
+.env.*
+
+# IDE / system
+.vscode/
+.idea/
+*.log
+.DS_Store
+
+# Virtual environment
+venv/
+.venv/
+env/
